@@ -8,7 +8,7 @@ import pickle
 import numpy as np
 import streamlit as st
 #load the model
-loaded_model = pickle.load(open(r'C:\Users\SRIVATSAL NARAYAN\Desktop\heart disease classifier\heart_disease_classifier.sav','rb'))
+loaded_model = pickle.load(open(r'heart_disease_classifier.sav','rb'))
 def heart_disease_prediction(input_data):
     input_data_as_np_array = np.asarray(input_data)
     input_data_reshape = input_data_as_np_array.reshape(1,-1)
